@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{C3A8E965-4DCE-13B0-1FF5-9652908AC237}</ProjectGuid>
+    <ProjectGuid>{AC623BC4-0385-FC38-E042-7ED22C1507E2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -61,17 +61,18 @@
      <Compile Include="Assets\Script\SceneChange.cs" />
      <Compile Include="Assets\script_k\Roulette.cs" />
      <Compile Include="Assets\scripts_m\_Gamemanager.cs" />
+     <Compile Include="Assets\scripts_m\CameraSingleton.cs" />
      <Compile Include="Assets\scripts_m\chomanager.cs" />
      <Compile Include="Assets\scripts_m\dbmanager.cs" />
-     <Compile Include="Assets\scripts_m\dbNode.cs" />
      <Compile Include="Assets\scripts_m\diamanager.cs" />
-     <Compile Include="Assets\scripts_m\diatrigger.cs" />
+     <Compile Include="Assets\scripts_m\endmanager.cs" />
      <Compile Include="Assets\scripts_m\FloatingText.cs" />
      <Compile Include="Assets\scripts_m\GameMenu.cs" />
+     <Compile Include="Assets\scripts_m\jokbotext.cs" />
+     <Compile Include="Assets\scripts_m\minigame_m.cs" />
+     <Compile Include="Assets\scripts_m\movecho.cs" />
      <Compile Include="Assets\scripts_m\playerStat.cs" />
      <Compile Include="Assets\scripts_m\ScreenManager.cs" />
-     <Compile Include="Assets\scripts_m\singleton.cs" />
-     <Compile Include="Assets\test_m\movecho.cs" />
      <Compile Include="Assets\xNode-master\Dialogue-master\Scripts\CharacterInfo.cs" />
      <Compile Include="Assets\xNode-master\Dialogue-master\Scripts\DialogueGraph.cs" />
      <Compile Include="Assets\xNode-master\Dialogue-master\Scripts\Nodes\Branch.cs" />
@@ -115,25 +116,25 @@
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Users/user/Documents/GitHub/jokha726/jokha(kirin)/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>C:/Users/user/Documents/GitHub/jokha726/jokha(min)/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/user/Documents/GitHub/jokha726/jokha(kirin)/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/user/Documents/GitHub/jokha726/jokha(min)/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>C:/Users/user/Documents/GitHub/jokha726/jokha(kirin)/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>C:/Users/user/Documents/GitHub/jokha726/jokha(min)/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/user/Documents/GitHub/jokha726/jokha(kirin)/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>C:/Users/user/Documents/GitHub/jokha726/jokha(min)/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>C:/Users/user/Documents/GitHub/jokha726/jokha(kirin)/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>C:/Users/user/Documents/GitHub/jokha726/jokha(min)/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/user/Documents/GitHub/jokha726/jokha(kirin)/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/user/Documents/GitHub/jokha726/jokha(min)/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
- <HintPath>C:/Users/user/Documents/GitHub/jokha726/jokha(kirin)/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+ <HintPath>C:/Users/user/Documents/GitHub/jokha726/jokha(min)/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/2019.1.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -316,13 +317,13 @@
  <HintPath>C:/Program Files/2019.1.2f1/Editor/Data/PlaybackEngines/VuforiaSupport/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Editor">
- <HintPath>C:/Users/user/Documents/GitHub/jokha726/jokha(kirin)/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
+ <HintPath>C:/Users/user/Documents/GitHub/jokha726/jokha(min)/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.StandardEvents">
- <HintPath>C:/Users/user/Documents/GitHub/jokha726/jokha(kirin)/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
+ <HintPath>C:/Users/user/Documents/GitHub/jokha726/jokha(min)/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Tracker">
- <HintPath>C:/Users/user/Documents/GitHub/jokha726/jokha(kirin)/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
+ <HintPath>C:/Users/user/Documents/GitHub/jokha726/jokha(min)/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>C:/Program Files/2019.1.2f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
